@@ -6,7 +6,7 @@ from langchain.text_splitter import CharacterTextSplitter  # Text splitter
 def update_vector_database(url):
     try:
         loader = UnstructuredURLLoader(urls=[url])
-        api_key = google_api_key  # Replace with your actual API key
+        api_key = 'AIzaSyCFPXxgS8Stxq975EZSM9Rn71Q5naJXHqs'  # Replace with your actual API key
 
         index = VectorstoreIndexCreator(
             embedding=GooglePalmEmbeddings(google_api_key=api_key),

@@ -34,7 +34,7 @@ refine_prompt_template = PromptTemplate(
 
 @retry.Retry(predicate=retry.if_exception_type(Exception))
 def initialize_llm():
-    return GooglePalm(google_api_key=google_api_key, temperature=0.1)
+    return GooglePalm(google_api_key='AIzaSyCFPXxgS8Stxq975EZSM9Rn71Q5naJXHqs', temperature=0.1)
 
 def get_llm():
     max_retries = 3
